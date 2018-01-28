@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.harsh.com.stockticker.UI.MainActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currOrClos_label"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currOrClos"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Highest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/high"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:text="Lowest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/low"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp">
+
+        <Button
+            android:text="Change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_codeChange"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/code"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
